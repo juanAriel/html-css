@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>curso de html y css</title>
+    <script type="text/javascript"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <!-- se pueden añadir comentarios-->
+</head>
+<body>
+<!-- etiqueta del contenido principal de la pagina-->    
+    <header id="encabezadoprincipal">
+            
+            <div class="contenedor">
+             
+                <div class="modulo mod-logo">
+                    <a href="index.html"><img src="imagenes/logo_pizza.png" id="logoempresa" alt="logo Empresa"></a>
+                </div>
+                <div class="modulo mod-izq">
+                    <a href="index.html"><span class="titulo-sitio">Pizzeria gonchy</span></a>
+                </div>
+                <div class="modulo mod-der">
+                    <nav id="menuprincipal">
+                        <a href="index.html">inicio</a>|
+                        <a href="galeria.html">galeria</a> |
+                        <a href="contacto.html">contactanos</a> |
+                        <a href="http://google.com" target="_black">buscador google</a>
+                    </nav>
+                </div>
+            </div>
+    </header>
+
+    <div class="contenedor">
+        <main id="contenidoprincipal">
+           <article>
+               <header>
+                   <h1>
+                        contactenos
+                   </h1>
+                   <p>
+                        hola, utilice el siguiente formulario para ponerce en contracto con nuestra pizzeria.
+                   </p>
+                   <hr>
+                   <form>
+
+                        <div class="formulario">
+                            
+                                <div class="form-linea enlinea-izq">
+                                    <label for="nombre">nombre *</label>
+                       <input id="nombre" type="text" name="nombre" required placeholder="escriba su nombre">
+                       
+                                </div><div class="form-linea enlinea-der">
+                                    <label for="apellido">apellido *</label>
+                            <input id="apellido" type="text" name="apellido" required placeholder="escriba su apellido">
+
+                                </div>
+
+                       
+                        </div>
+                        
+                        <div class="formulario">
+                            <label for="email">email *</label>
+                            <input id="email" type="email" name="email" required placeholder="escriba su mensaje">
+        
+                        </div>
+                        <div class="formulario"> 
+                            <label for="seltipo">tipo mensaje *</label>
+                            <select id="seltipo" name="seltipo" required>
+                                <option value="">seleccione...</option>
+                                <option value="solicitud">solicitud</option>
+                                <option value="queja">queja</option>
+                                <option value="otro">otro</option>
+                            </select>
+        
+                        </div>
+
+                        <div class="formulario">
+                            <label for="mensaje">mensaje</label>
+                    <textarea id="mensaje" type="textarea" name="mensaje" required placeholder="escriba su mensaje"></textarea>
+        
+        
+                        </div>
+                    
+                        <div class="datos-form-btn">
+                            <input id="btnenviar" type="submit" name="btnenviar" value="Enviar mensaje">
+                        </div>
+                    
+                    
+                    
+                   </form>
+               </header>
+           </article>
+
+        </main>
+            <aside id="enlacesrel">
+
+<div class="contenedor-enlaces">
+    <h3>otros tipos de pizzas </h3>
+    <p>existe distintos tipos de pizza y de diferentes sabores<a href="login.html">ver</a></p>
+    <p>crear una galeria<a href="galeria.html">ver</a></p>
+    <p>crea formulario de contacto<a href="contacto.html">ver</a></p>
+
+</div>
+<div class="contenedor-enlaces">
+    <h3>noticias de nuevas pizzas </h3>
+    <p>sabores para el 2020<a href="google.com" target="_blank">leer</a></p>
+    <p>precios actuales de la pizza<a href="google.com" target="_blank">leer</a></p>
+
+</div>
+<div class="contenedor-enlaces">
+    <h3>enlaces relacionados </h3>
+    <p><a href="youtube.com" target="_blank">etiquetas</a></p>
+
+</div>
+<div class="contenedor-enlaces">
+    <h3>publicidad</h3>
+    <a href="https://www.youtube.com" target="blank"><img src="imagenes/promo_pizza.jpg"></a>
+
+</div> 
+            </aside>
+     </div>
+    <section id="clientes-destacados" >
+        <div class="contenedor cont-clientes">
+            <h2>clientes destacados de la semana</h2>
+                <div class="contenedor-cliente">
+                    <div class="info-cliente">
+                    
+                        <img src="imagenes/cliente1.png" width="150">
+                        <span>cliente nro: 1</span>
+                    </div>
+                    <div class="info-cliente">
+                            
+                        <img src="imagenes/cliente2.png" width="150">
+                        <span>cliente nro: 2</span>
+                    </div>
+                    <div class="info-cliente">
+                        <img src="imagenes/cliente3.png" width="150">
+                        <span>cliente nro: 3</span>
+                        
+                    </div>
+                    <div class="info-cliente">
+                        <img src="imagenes/cliente4.png" width="150">
+                        <span>cliente nro: 4</span>
+                        
+                    </div>
+                </div>
+            
+        </div>
+        
+    </section>
+    <section id="redessociales">
+        <a href="https://www.facebook.com" target="_blank"><img src="imagenes/faceboo_logo.png" width="50" height="50"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="imagenes/instagram_logo.png" width="50" height="50"></a>
+    </section>
+    <footer id="footerpagina">
+        <div class="contenedor">
+             <div   class="mod-pie-pagina pie-pag-izq">
+                    
+                <span class="pie-nombre-marca">pizzeria gonchi</span><br>
+                <span class="pie-der-autor">derechos reservados 2020</span><br>
+             </div>
+             <div   class="mod-pie-pagina pie-pag-der">
+                <address>
+                    pais, cbba<br>
+                    calle, tiquipalla<br>
+                    tel, 4444444
+                </address>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
+https://www.youtube.com/watch?v=Rcbd6UOH52I
